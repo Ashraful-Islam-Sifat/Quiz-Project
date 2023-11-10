@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz app</title>
+</head>
+<body>
+    <div class="myQuizApp">
+            <img class="img" src="images/istockphoto-1308055966-1024x1024.jpg" alt="">
+        <div class="text">
+            <h3>Quiz App With Fixed Time</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas exercitationem corrupti ullam aspernatur quasi nam hic, est possimus iste incidunt, saepe ratione minima, enim voluptatum temporibus rem a praesentium eos!</p>
+        </div>
+        <div class="text">
+            <h3>Test your knowledge</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <button class="myBtn">Start Quiz</button>
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+<!-- .................................rulesBox.................................... -->
+
+
+    <div class="rulesBox">
+        <div class="rulesTitle">Some Rules of this quiz</div>
+        <div class="roolsList">
+            <ol>
+                <li>You will have only <span>15 seconds</span> for each question.</li>
+                <li>Once you select your answer, it can't be undone.</li>
+                <li>You can't select any option once time goes off.</li>
+                <li>You You can't exit from this quiz while you're playing.</li>
+                <li>You'll get points on the basis of your correct answer.</li>
+            </ol>
+        </div>
+                <button class="exitBtn">Exit Quiz</button>
+                <button class="continueBtn">Continue</button>
+    </div>
+
+
+
+
+
+
+
+    <!-- .....................................Questions........................ -->
+    <div class="questions">
+        
+        <header class="questionsHeader">
+            <div class="title">Start Exam</div>
+            <div class="timeCount">
+                <div class="timeLeft">Time Left</div>
+                <div class="seconds">15</div>
+            </div>
+            <div class="time_lines"></div>
+        </header>
+        
+        
+
+      <div class="section">
+          <div class="Question_text">
+            <!-- <span>1. what does HTML stand for?</span> -->
+        </div>
+          <div class="myOptions">
+              
+          </div>
+      </div>
+
+      <footer>
+
+        <div class="total_que">
+           
+        </div>
+          
+          <button class="nextBtn">Next Que</button>
+      </footer>
+
+    </div> 
+
+
+    <div class="timesUp">
+        <p>Time's up!</p>
+        <button class="nextque">Go to next que</button>
+    </div>
+
+
+    <div class="resultpage">
+        <img class="result_image" src="images/javascript project bangla -- quiz app development -- stack learner.mp4[2023-09-29 14-07-36.150].jpg" alt="">
+        <h1>Congratulations!</h1>
+        <h3>You have finished this exam</h3>
+        <h3>you got <span class="points"></span> out of <span class="total_point"></span></h3>
+        <div class="result_buttons">
+            <button class="reply_btn">Replay</button>
+            <button class="quit_btn">Quite Quiz</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="question.js"></script>
+</body>
+</html>

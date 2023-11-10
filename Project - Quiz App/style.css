@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.myQuizApp{
+    height: 700px;
+    width: 400px;
+    background-color: white;
+    border-radius: 45px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.img{
+    width: 400px;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    border-bottom: 1px solid black;
+}
+
+.text{
+    margin-top: 35px;
+    padding: 0px 20px;
+}
+
+.text h3{
+    margin-bottom: 10px;
+}
+
+.text p {
+    line-height:30px;
+    color: grey;
+}
+
+.myBtn{
+    background-color: rgb(247, 96, 2);
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-top-left-radius: 40px;
+    transition: all 0.3s;
+}
+
+.myBtn:hover{
+    background-color: rgb(0, 132, 132);
+}
+
+
+
+
+
+/* ..........................................rulesBox............................ */
+
+.rulesBox.activeInfo{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+}
+
+.rulesBox{
+    height: 700px;
+    width: 400px;
+    background-color: white;
+    border-radius: 45px;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.rulesTitle{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.roolsList{
+    padding: 40px;
+    line-height:30px;
+    color: grey;
+}
+
+.roolsList ol li{
+    margin-bottom: 20px;
+}
+
+.roolsList span{
+    color: rgb(0, 128, 255);
+    font-weight: bold;
+}
+
+.exitBtn{
+    background-color: rgb(247, 96, 2);
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-top-right-radius: 40px;
+    transition: all 0.3s;
+}
+
+.continueBtn{
+    background-color: rgb(247, 96, 2);
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-top-left-radius: 40px;
+    transition: all 0.3s;
+}
+
+.exitBtn:hover{
+    background-color: rgb(0, 132, 132);
+}
+
+.continueBtn:hover{
+    background-color: rgb(0, 132, 132);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ....................................questions............................ */
+
+.questions.activeQuiz{
+    display: block;
+}
+
+.questions{
+    height: 700px;
+    width: 400px;
+    background-color: white;
+    border-radius: 45px;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+.questionsHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+}
+
+.title{
+    font-weight: bold;
+}
+
+.timeCount{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 110, 255, 0.308);
+    height: 25px;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.timeLeft{
+    padding-right: 15px;
+    color: rgba(3, 3, 115, 0.56);
+}
+
+.seconds{
+    background: rgb(67, 67, 67);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.time_lines{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.section{
+    padding: 25px 30px 20px 30px;
+}
+
+.Question_text{
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 50px;
+    color: black;
+}
+
+.myOptions{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.optionImage{
+    width: 30px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+    width: 270px;
+    border: 1px solid rgba(0, 0, 255, 0.383);
+    background-color: #92d4f327;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.options.correct{
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #9ceeaf;
+}
+
+.options.wrong{
+    color: rgb(186, 2, 2);
+    background-color: rgba(255, 0, 0, 0.206);
+    border: 1px solid rgba(255, 0, 0, 0.502);
+}
+
+.options.disabled{
+    pointer-events: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    border-top: gray;
+    height: 50px;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.469);
+}
+
+.total_que{
+    padding-left: 20px;
+}
+
+.nextBtn{
+    background-color: rgb(247, 96, 2);
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-top-left-radius: 40px;
+    transition: all 0.3s;
+    display: none;
+}
+
+.nextBtn:hover{
+    background-color: rgb(0, 132, 132);
+}
+
+.rightIcon{
+    width: 20px;
+}
+
+.crossIcon{
+    width: 20px;
+}
+
+.questions header .time_lines{
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.timesUp{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.673);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    border-radius: 10px;
+    display: none;
+}
+
+.timesUp p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: red;
+}
+
+.nextque{
+    background-color: rgb(247, 96, 2);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+.resultpage{
+    height: 700px;
+    width: 400px;
+    background-color: white;
+    border-radius: 45px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    display: none;
+}
+
+.resultpage h1{
+    text-align: center;
+}
+
+.resultpage h3{
+    margin-top: 20px;
+    color: gray;
+    text-align: center;
+}
+
+.result_image{
+    width: 350px;
+    padding-bottom: 100px;
+}
+
+.result_buttons{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.reply_btn{
+    background-color: rgb(247, 96, 2);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.reply_btn:hover{
+    background-color: rgb(0, 132, 132);
+}
+
+.quit_btn{
+    background-color: rgb(247, 96, 2);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.quit_btn:hover{
+    background-color: rgb(0, 132, 132);
+}
+
