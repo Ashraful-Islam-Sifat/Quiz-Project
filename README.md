@@ -1,4 +1,4 @@
-# Quizz-Project🌐
+# Quiz-Project🌐
 
 ## Features 🚀
 
